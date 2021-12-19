@@ -22,6 +22,8 @@ Software: Python, Jupyter Notebook
 
 ### Naive Random Oversampling
 
+In random oversampling, instances of the minority class are randomly selected and added to the training set until the majority and minority classes are balanced.
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/88597187/146665836-13929d4f-08e3-4781-badc-a0f798489178.png"  width="400" height="100"/>
         <img src="https://user-images.githubusercontent.com/88597187/146666378-1af17795-0fc4-41ef-8311-8a39ce3bd77f.png"  width="400" height="100"/>
@@ -51,6 +53,8 @@ Software: Python, Jupyter Notebook
 
 
 ### SMOTE Oversampling
+
+The synthetic minority oversampling technique (SMOTE) is another oversampling approach to deal with unbalanced datasets. In SMOTE, like random oversampling, the size of the minority is increased. The key difference between the two lies in how the minority class is increased in size. In SMOTE, new instances are interpolated. That is, for an instance from the minority class, a number of its closest neighbors is chosen. Based on the values of these neighbors, new values are created.
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/88597187/146665876-2eb7f4bf-1c27-4475-873a-ba893f4081e1.png"  width="400" height="100"/>
@@ -83,6 +87,8 @@ Software: Python, Jupyter Notebook
 
 ### Cluster Centroids Undersampling
 
+Cluster centroid undersampling is akin to SMOTE. The algorithm identifies clusters of the majority class, then generates synthetic data points, called centroids, that are representative of the clusters. The majority class is then undersampled down to the size of the minority class.
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/88597187/146665902-bde19196-1f7e-4e44-a164-8b4029e95d08.png"  width="400" height="100"/>
     <img src="https://user-images.githubusercontent.com/88597187/146666557-24f9116f-cf2b-481e-a2f1-167da0ec23f6.png"  width="400" height="100"/>
@@ -112,6 +118,10 @@ Software: Python, Jupyter Notebook
 
 
 ### SMOTEENN Under and Over Sampling
+SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms. SMOTEENN is a two-step process:
+* Oversample the minority class with SMOTE.
+* Clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped.
+
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/88597187/146665939-d4b2aaa9-c808-4d06-ae69-c6a0d92f35a1.png"  width="400" height="100"/>
@@ -146,6 +156,9 @@ Software: Python, Jupyter Notebook
 
 ### Balanced Random Forest Classifier
 
+A balanced random forest perform data resampling on the bootstrap sample in order to explicitly change the class distribution.
+
+
 <p align="center">
     <img src="https://user-images.githubusercontent.com/88597187/146665949-46d0ea32-60ef-4026-8d4a-cf06b0e80f3c.png"  width="400" height="100"/>
      <img src="https://user-images.githubusercontent.com/88597187/146666653-8b0551b6-0d65-49a5-bcfc-0902c9cc88d7.png"  width="400" height="100"/>
@@ -176,6 +189,8 @@ Software: Python, Jupyter Notebook
 
 
 ### Easy Ensemble AdaBoost Classifier
+
+In AdaBoost, a model is trained then evaluated. After evaluating the errors of the first model, another model is trained. This time, however, the model gives extra weight to the errors from the previous model. The purpose of this weighting is to minimize similar errors in subsequent models. Then, the errors from the second model are given extra weight for the third model
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/88597187/146665996-cc37bd88-b1a4-457f-8102-3990a566acc0.png"  width="400" height="100"/>
