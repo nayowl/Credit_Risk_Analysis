@@ -222,3 +222,11 @@ In AdaBoost, a model is trained then evaluated. After evaluating the errors of t
 
 
 ## 4. Summary
+
+In the credit risk prediction model , the model will be used to identify  good candidates for loans. Using the sampling method like naive random oversampling, SMOTE, Cluster centroid and SMOTEENN , the accuracy score are between 0.54 the lowest  and 0.69 the highest , which means the models are correct only around 54-69% all of the time. Precision that measure of how reliable a positive classification for the models are 0.01 for high risk and 0.99 for low risk. This means that many low risk loan marked as high risk while almost 99% of low risk is correctly marked as low risk.  While the recall/sensitivity  are around 0.63-0.80 for high risk and 0.40-0.69 for low risk means that actual high risk is true 63-80 and not too many actual  high loans marked as low risk.
+
+
+Using Ensemble Balanced Random Forest Classifier and Ada boost, the  score is higher than using the sampling method, The accuracy score is 0.79for Balanced Random Forest and 0.93 for Ada Boost. While the score for precision is 0.03( Balanced random  forest) and 0.01 ( Ada boost) for high risk, and 1 for low risk for both of them. The recall for Balanced random forest  is  0.70 for high risk and 0.87 for low risk, and for ada boost 0.92 for high risk and 0.94 for low risk. From this score we can summarize that ensemble method has better accuracy to predict than the sampling method . However, this two model need to to be used by caution to avo overfitting.
+    
+    
+
