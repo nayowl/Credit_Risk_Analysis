@@ -23,66 +23,186 @@ Software: Python, Jupyter Notebook
 ### Naive Random Oversampling
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88597187/146665836-13929d4f-08e3-4781-badc-a0f798489178.png"  width="500" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146665836-13929d4f-08e3-4781-badc-a0f798489178.png"  width="400" height="100"/>
+        <img src="https://user-images.githubusercontent.com/88597187/146666378-1af17795-0fc4-41ef-8311-8a39ce3bd77f.png"  width="400" height="100"/>
 </p>
 
 <p align="center">
-  <sub>Figure 1 Imbalance Classification Report Naive Random Oversampling </sub>
+  <sub>Figure 1 Imbalance Classification Report & Balanced Accuracy Score Naive Random Oversampling </sub>
 </p>
+
+* Balanced accuracy score:0.66
+* Precision: 
+
+    High risk: 0.01
+    
+    Low risk: 1.00
+    
+    Average/total :0.99
+
+* Recall:
+
+    High risk: 0.71
+    
+    Low risk: 0.60
+    
+    Average/total: 0.60
+
+
 
 ### SMOTE Oversampling
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88597187/146665876-2eb7f4bf-1c27-4475-873a-ba893f4081e1.png"  width="500" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146665876-2eb7f4bf-1c27-4475-873a-ba893f4081e1.png"  width="400" height="100"/>
+     <img src="https://user-images.githubusercontent.com/88597187/146666481-5c2ac806-439b-4ad5-89ca-8478c9fc4fd0.png"  width="400" height="100"/>
 </p>
 
 <p align="center">
-  <sub>Figure 2 Imbalance Classification Report SMOTE Oversampling </sub>
+  <sub>Figure 2 Imbalance Classification Report & Balanced Accuracy Score SMOTE Oversampling </sub>
 </p>
+
+* Balanced accuracy score:0.66
+* Precision: 
+
+    High risk: 0.01
+    
+    Low risk: 1.00
+    
+    Average/total: 0.99
+
+* Recall:
+
+    High risk: 0.63
+    
+    Low risk: 0.69
+    
+    Average/total: 0.69
+
+
 
 
 ### Cluster Centroids Undersampling
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88597187/146665902-bde19196-1f7e-4e44-a164-8b4029e95d08.png"  width="500" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146665902-bde19196-1f7e-4e44-a164-8b4029e95d08.png"  width="400" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146666557-24f9116f-cf2b-481e-a2f1-167da0ec23f6.png"  width="400" height="100"/>
 </p>
 
 <p align="center">
-  <sub>Figure 3 Imbalance Classification Report Cluster Centroids Undersampling </sub>
+  <sub>Figure 3 Imbalance Classification Report & Balanced Accuracy Score Cluster Centroids Undersampling </sub>
 </p>
+
+* Balanced accuracy score:0.54
+* Precision: 
+
+    High risk: 0.01
+    
+    Low risk: 1.00
+    
+    Average/total: 0.99
+
+* Recall:
+
+    High risk: 0.69
+    
+    Low risk: 0.40
+    
+    Average/total:0.40
+
+
 
 ### SMOTEENN Under and Over Sampling
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88597187/146665939-d4b2aaa9-c808-4d06-ae69-c6a0d92f35a1.png"  width="500" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146665939-d4b2aaa9-c808-4d06-ae69-c6a0d92f35a1.png"  width="400" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146666601-da531832-449d-4f2f-8211-147c2713cef0.png"  width="400" height="100"/>
 </p>
 
 <p align="center">
-  <sub>Figure 4 Imbalance Classification Report SMOTEENN Under and Over Sampling </sub>
+  <sub>Figure 4 Imbalance Classification Report & Balanced Accuracy Score SMOTEENN Under and Over Sampling </sub>
 </p>
+
+* Balanced accuracy score:0.69
+* Precision: 
+
+    High risk: 0.01
+    
+    Low risk: 1.00
+    
+    Average/total: 0.99
+
+* Recall:
+
+    High risk: 0.80
+    
+    Low risk: 0.57
+    
+    Average/total:0.57
+
+
+
+
 
 
 ### Balanced Random Forest Classifier
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88597187/146665949-46d0ea32-60ef-4026-8d4a-cf06b0e80f3c.png"  width="500" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146665949-46d0ea32-60ef-4026-8d4a-cf06b0e80f3c.png"  width="400" height="100"/>
+     <img src="https://user-images.githubusercontent.com/88597187/146666653-8b0551b6-0d65-49a5-bcfc-0902c9cc88d7.png"  width="400" height="100"/>
+</p>
 </p>
 
 <p align="center">
-  <sub>Figure 5 Imbalance Classification Report Balanced Random Forest Classifier </sub>
+  <sub>Figure 5 Imbalance Classification Report & Balanced Accuracy Score Balanced Random Forest Classifier </sub>
 </p>
+
+
+* Balanced accuracy score:0.79
+* Precision: 
+
+    High risk: 0.03 
+    
+    Low risk: 1.00
+    
+    Average/total: 0.99
+
+* Recall:
+
+    High risk: 0.70
+    
+    Low risk: 0.87
+    
+    Average/total:0.87
 
 
 ### Easy Ensemble AdaBoost Classifier
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88597187/146665996-cc37bd88-b1a4-457f-8102-3990a566acc0.png"  width="500" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146665996-cc37bd88-b1a4-457f-8102-3990a566acc0.png"  width="400" height="100"/>
+    <img src="https://user-images.githubusercontent.com/88597187/146666694-6973a92a-a696-44ed-942e-98c93e5642c2.png"  width="400" height="100"/>
+</p>
 </p>
 
 <p align="center">
-  <sub>Figure 6 Imbalance Classification Report Easy Ensemble AdaBoost Classifier</sub>
+  <sub>Figure 6 Imbalance Classification Report & Balanced Accuracy Score Easy Ensemble AdaBoost Classifier</sub>
 </p>
 
+* Balanced accuracy score:0.93
+* Precision: 
+
+    High risk: 0.09  
+    
+    Low risk: 1.00
+    
+    Average/total: 0.99
+
+* Recall:
+
+    High risk: 0.92 
+    
+    Low risk: 0.94
+    
+    Average/total:0.94
 
 
 
